@@ -1,0 +1,14 @@
+{
+    "name": "in10/drupal-link-normalizer",
+    "description": "Normalize the link field uri (for JSON:API)",
+    "type": "drupal-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Stephan de Bruin",
+            "email": "stephan.de.bruin@in10.nl"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
