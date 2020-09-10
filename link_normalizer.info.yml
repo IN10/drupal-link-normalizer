@@ -2,4 +2,3 @@ name: Link Field normalizer
 type: module
 description: Normalize the link field uri (for JSON:API)
 core: 8.x
-package: Paspartout
