@@ -21,14 +21,14 @@ class LinkNormalizer extends NormalizerBase
     /**
      * {@inheritdoc}
      */
-    public function normalize($object, $format = null, array $context = array())
+    public function normalize($object, $format = null, array $context = [])
     {
         $value = $object->getValue();
         $parent = $object->getParent();
         $type = $parent->getFieldDefinition()->getType();
         if ($type === 'link') {
             $internalLink = $parent->get('uri')->getValue();
-            $link = Url::fromUri($internalLink, array('absolute' => false))->toString();
+            $link = Url::fromUri($internalLink, ['absolute' => false])->toString();
             $object->getParent()->get('uri')->setValue('placeholder');
             $value = ['url' => $link];
         }
