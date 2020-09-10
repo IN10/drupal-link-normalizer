@@ -4,6 +4,7 @@ namespace Drupal\link_normalizer\Normalizer;
 
 use Drupal\Core\Url;
 use Drupal\serialization\Normalizer\NormalizerBase;
+use Drupal\Core\TypedData\TypedDataInterface;
 
 /**
  * Converts typed data objects to arrays.
@@ -15,7 +16,7 @@ class LinkNormalizer extends NormalizerBase
      *
      * @var string
      */
-    protected $supportedInterfaceOrClass = 'Drupal\Core\TypedData\TypedDataInterface';
+    protected $supportedInterfaceOrClass = TypedDataInterface::class;
 
     /**
      * {@inheritdoc}
