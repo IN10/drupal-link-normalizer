@@ -1,6 +1,5 @@
 services:
   link_normalizer.node_entity:
     class: Drupal\link_normalizer\Normalizer\LinkNormalizer
-    arguments: ['@entity.manager']
     tags:
       -  { name: normalizer, priority: 2 }

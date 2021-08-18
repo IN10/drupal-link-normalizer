@@ -1,5 +1,5 @@
 {
-    "name": "in10/drupal-link-normalizer",
+    "name": "in10/link_normalizer",
     "description": "Normalize the link field uri (for JSON:API)",
     "type": "drupal-module",
     "license": "proprietary",
