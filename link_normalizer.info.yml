@@ -1,4 +1,4 @@
 name: Link Field normalizer
 type: module
 description: Normalize the link field uri (for JSON:API)
-core_version_requirement: ^8.8 || ^9
+core_version_requirement: ^8.8 || ^9 || ^10
