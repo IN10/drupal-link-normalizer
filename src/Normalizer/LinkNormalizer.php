@@ -33,7 +33,6 @@ class LinkNormalizer extends NormalizerBase
 
         $internalLink = $parent->get('uri')->getValue();
         $link = Url::fromUri($internalLink, ['absolute' => false])->toString();
-        $object->getParent()->get('uri')->setValue('placeholder');
         return ['url' => $link];
     }
 }
